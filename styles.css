@@ -1,0 +1,229 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom right, #E8EAF6, #C5CAE9);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h3, h4 {
+    color: #3F51B5;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #3F51B5, #7986CB);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* CV Section */
+#cv .cv-container {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cv-sidebar {
+    background: linear-gradient(to bottom right, #3F51B5, #7986CB);
+    color: white;
+    padding: 30px;
+    width: 30%;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid white;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info svg {
+    margin-right: 10px;
+}
+
+.cv-main {
+    padding: 30px;
+    width: 70%;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.skills span {
+    background: linear-gradient(to right, #3F51B5, #7986CB);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.achievements li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.achievements svg {
+    color: #FFD700;
+    margin-right: 10px;
+}
+
+/* Sections */
+section {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section h2 svg {
+    margin-right: 10px;
+}
+
+/* Services */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background: #F5F5F5;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Hobbies */
+.hobbies-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.hobbies-list li {
+    display: flex;
+    align-items: center;
+    background: #F5F5F5;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.hobbies-list svg {
+    margin-right: 10px;
+    color: #3F51B5;
+}
+
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    background: white;
+    color: #3F51B5;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #3F51B5;
+    color: white;
+}
+
+.social-links svg {
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #303F9F, #5C6BC0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #cv .cv-container {
+        flex-direction: column;
+    }
+
+    .cv-sidebar, .cv-main {
+        width: 100%;
+    }
+
+    .services-grid, .hobbies-list, .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
